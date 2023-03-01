@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct stud
+{
+	char firstname[20];
+	char lastname[20];
+	unsigned int age;
+	int math;
+	int computer;
+	float average;
+};
+struct stud student[5];
+
+int main(void)
+{
+	int i=0;
+	for(i=0;i<5;i++){
+		scanf("%s",student[i].firstname);
+		scanf("%s",student[i].lastname);
+		scanf("%d",student[i].age);
+		scanf("%d",student[i].math);
+		scanf("%d",student[i].computer);
+		scanf("%f",student[i].average);
+	}
+	for(i=0;i<5;i++){
+		printf("%10s%10s%8d%4d%4d%8f",student[i].firstname,student[i].lastname,student[i].age,student[i].math,student[i].computer,student[i].average);
+		system("pause");
+		return 0;
+	}
+	
+}
