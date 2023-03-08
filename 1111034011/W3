@@ -39,4 +39,4 @@ void displayBits(unsigned int value,int dir,int num)
 		}
 	}
 	putchar('\n');
-} //
+} 
